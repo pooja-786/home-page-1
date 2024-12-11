@@ -197,7 +197,9 @@ z-index: 1;
     top: 49px;
     left: 438px;
 }
-
+.mb-24{
+    margin-bottom: 24px;
+}
 @media (min-width:992px) {
     .col-lg-6 {
         width: 50%;
@@ -216,17 +218,17 @@ z-index: 1;
         align-items: center;
         cursor: pointer;
         position: relative;
-        z-index: 1;
+        z-index: 9999;
     }
 
     label[for="list"]>span {
         width: 100%;
-        height: 5px;
+        height: 3px;
         background-color: white;
         border-radius: 2px;
     }
 
-    input[type="checkbox"]:checked~ul {
+    input#list:checked~.ul-modify {
         background-color: black;
         left: 0;
     }
@@ -253,7 +255,7 @@ z-index: 1;
         top: 0;
         width: 100%;
         height: 100%;
-        background-color: aqua;
+        background-color: black;
         flex-direction: column;
         justify-content: center;
         z-index: 1;
