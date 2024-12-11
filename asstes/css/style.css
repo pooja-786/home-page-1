@@ -22,6 +22,7 @@
     margin-left: -12px;
     margin-right: -12px;
 }
+
 .col-6 {
     width: 50%;
     padding-left: 12px;
@@ -35,9 +36,7 @@
     padding-right: 12px;
 }
 
-.min-vh-100 {
-    min-height: 100vh;
-}
+
 
 .align-items-center {
     align-items: center;
@@ -71,7 +70,8 @@ nav {
     height: 810px;
 
 }
-@font-face{
+
+@font-face {
     font-family: Helvetica;
     @import url(../Helvetica);
 }
@@ -153,7 +153,7 @@ nav {
 .btn-3 {
     border-radius: 0px 50px 50px 20px;
     border: 1px solid rgba(0, 168, 232, 1);
-    background-color: rgba(0, 168, 232, 1); 
+    background-color: rgba(0, 168, 232, 1);
     width: 137px;
     height: 48px;
     color: var(--White, rgba(255, 255, 255, 1));
@@ -170,30 +170,93 @@ nav {
 
 .devolepmant-image {
     margin-top: 100px;
-    z-index: 1%;
+position: relative;
+z-index: 1;
 }
+
 .more-than {
-font-family: Helvetica;
+    font-family: Helvetica;
     font-size: 38px;
     font-weight: 400;
     line-height: 41.8px;
     color: var(--Prussian-Blue, rgba(0, 52, 89, 1));
     margin-top: 280px;
-   
+
 }
+
 .text-modify-1 {
     font-family: Helvetica;
-        font-size: 38px;
-        font-weight: 700;
-        line-height: 41.8px;
-       color: rgba(0,168,232);
-} 
-.icon {
-        position: absolute;
-            top: 49px;
-            left: 438px;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 41.8px;
+    color: rgba(0, 168, 232);
 }
 
-@media (max-width:992.98px) {
+.icon {
+    position: absolute;
+    top: 49px;
+    left: 438px;
+}
 
+@media (min-width:992px) {
+    .col-lg-6 {
+        width: 50%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (max-width:992px) {
+    label[for="list"] {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+    }
+
+    label[for="list"]>span {
+        width: 100%;
+        height: 5px;
+        background-color: white;
+        border-radius: 2px;
+    }
+
+    input[type="checkbox"]:checked~ul {
+        background-color: black;
+        left: 0;
+    }
+
+    input:checked~label[for="list"]>span:nth-child(1) {
+        transform: rotate(64deg);
+        transform-origin: left;
+    }
+
+    input:checked~label[for="list"]>span:nth-child(2) {
+        transform: rotate(-40deg);
+        opacity: 0;
+
+    }
+
+    input:checked~label[for="list"]>span:nth-child(3) {
+        transform: rotate(-63deg);
+        transform-origin: left;
+    }
+
+    .ul-modify {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: aqua;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 1;
+        transition: all 200ms linear;
+    }
 }
