@@ -170,8 +170,7 @@ nav {
 
 .devolepmant-image {
     margin-top: 100px;
-position: relative;
-z-index: 1;
+    z-index: 1;
 }
 
 .more-than {
@@ -197,9 +196,11 @@ z-index: 1;
     top: 49px;
     left: 438px;
 }
-.mb-24{
+
+.mb-24 {
     margin-bottom: 24px;
 }
+
 @media (min-width:992px) {
     .col-lg-6 {
         width: 50%;
@@ -261,4 +262,5 @@ z-index: 1;
         z-index: 1;
         transition: all 200ms linear;
     }
+
 }
