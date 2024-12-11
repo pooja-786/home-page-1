@@ -22,9 +22,15 @@
     margin-left: -12px;
     margin-right: -12px;
 }
+.col-6 {
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
 
 .col-12 {
-    width: 100;
+    width: 100%;
     padding-left: 12px;
     padding-right: 12px;
 }
@@ -62,6 +68,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    height: 810px;
 
 }
 
@@ -154,4 +161,27 @@ nav {
     left: 304px;
     top: 40px;
 
+}
+.text-white {
+    color: var(--White, rgba(255, 255, 255, 1));
+}
+
+.devolepmant-image {
+    margin-top: 100px;
+}
+.more-than {
+font-family: Helvetica;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 41.8px;
+    color: var(--Prussian-Blue, rgba(0, 52, 89, 1));
+    margin-top: 280px;
+   
+}
+.text-modify-1 {
+    font-family: Helvetica;
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 41.8px;
+       color: rgba(0,168,232);
 }
